@@ -1,0 +1,27 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #4f46e5; /* indigo-600 */
+  color: white;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-group {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
